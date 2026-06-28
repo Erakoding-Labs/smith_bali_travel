@@ -120,6 +120,17 @@
 		gap: 0.9rem;
 		margin-bottom: 2.5rem;
 	}
+	/* Both CTAs share one width — mirrored buttons */
+	.hero__cta :global(.btn) {
+		flex: 1 1 auto;
+		min-width: 230px;
+	}
+	@media (min-width: 560px) {
+		.hero__cta :global(.btn) {
+			flex: 0 0 auto;
+			width: 230px;
+		}
+	}
 
 	.trust {
 		display: flex;

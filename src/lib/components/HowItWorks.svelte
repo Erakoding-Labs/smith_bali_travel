@@ -34,7 +34,9 @@
 		grid-template-columns: repeat(auto-fit, minmax(min(100%, 230px), 1fr));
 		gap: var(--grid-gap);
 		align-items: stretch;
-		counter-reset: step;
+		list-style: none;
+		margin: 0;
+		padding: 0;
 		position: relative;
 	}
 	.step {
