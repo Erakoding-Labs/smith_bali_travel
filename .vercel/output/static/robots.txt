@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://smithbalitravel.com/sitemap.xml
