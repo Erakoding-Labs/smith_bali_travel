@@ -45,14 +45,16 @@
 <style>
 	.cards {
 		display: grid;
-		gap: 1.25rem;
+		gap: var(--grid-gap);
 		grid-template-columns: 1fr;
+		align-items: stretch;
 	}
 	.incl {
+		height: 100%;
 		background: var(--surface);
 		border: 1px solid var(--border);
 		border-radius: var(--radius);
-		padding: 1.75rem;
+		padding: var(--card-pad);
 		box-shadow: var(--shadow-sm);
 	}
 	.incl h3 {
@@ -80,11 +82,11 @@
 	}
 
 	.note {
-		margin-top: 1.5rem;
+		margin-top: var(--grid-gap);
 		background: var(--sunset-soft);
 		border: 1px solid #f8d4ad;
 		border-radius: var(--radius);
-		padding: 1.5rem;
+		padding: var(--card-pad);
 		display: flex;
 		flex-wrap: wrap;
 		align-items: center;

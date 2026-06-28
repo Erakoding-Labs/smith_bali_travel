@@ -57,9 +57,11 @@
 	.grid {
 		display: grid;
 		grid-template-columns: repeat(auto-fill, minmax(min(100%, 320px), 1fr));
-		gap: 1.5rem;
+		gap: var(--grid-gap);
+		align-items: stretch;
 	}
 	.tour {
+		height: 100%;
 		background: var(--surface);
 		border: 1px solid var(--border);
 		border-radius: var(--radius);
@@ -110,7 +112,7 @@
 	}
 
 	.tour__body {
-		padding: 1.3rem;
+		padding: var(--card-pad);
 		display: flex;
 		flex-direction: column;
 		flex: 1;

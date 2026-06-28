@@ -35,11 +35,11 @@
 <style>
 	.masonry {
 		columns: 2;
-		column-gap: 0.85rem;
+		column-gap: var(--space-xs);
 	}
 	.masonry__item {
 		break-inside: avoid;
-		margin-bottom: 0.85rem;
+		margin-bottom: var(--space-xs);
 		border-radius: var(--radius);
 		overflow: hidden;
 		box-shadow: var(--shadow-sm);
@@ -56,18 +56,20 @@
 	.social {
 		display: flex;
 		flex-wrap: wrap;
-		gap: 0.85rem;
+		gap: var(--space-xs);
 		justify-content: center;
-		margin-top: 2.25rem;
+		margin-top: var(--space-xl);
 	}
 	.social__btn {
 		display: inline-flex;
 		align-items: center;
+		justify-content: center;
 		gap: 0.55rem;
 		padding: 0.8rem 1.4rem;
 		border-radius: var(--radius-pill);
 		font-weight: 700;
 		color: #fff;
+		min-width: 230px; /* mirror: both buttons equal width */
 	}
 	.social__btn.ig {
 		background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);

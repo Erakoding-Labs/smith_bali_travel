@@ -32,15 +32,17 @@
 	.steps {
 		display: grid;
 		grid-template-columns: repeat(auto-fit, minmax(min(100%, 230px), 1fr));
-		gap: 1.25rem;
+		gap: var(--grid-gap);
+		align-items: stretch;
 		counter-reset: step;
 		position: relative;
 	}
 	.step {
+		height: 100%;
 		background: var(--surface);
 		border: 1px solid var(--border);
 		border-radius: var(--radius);
-		padding: 1.75rem 1.5rem;
+		padding: var(--card-pad);
 		box-shadow: var(--shadow-sm);
 		position: relative;
 	}
@@ -69,6 +71,6 @@
 	}
 	.how__cta {
 		text-align: center;
-		margin-top: 2.5rem;
+		margin-top: var(--space-xl);
 	}
 </style>

@@ -124,11 +124,11 @@
 
 	form {
 		display: grid;
-		gap: 1rem;
+		gap: var(--space-sm);
 	}
 	.row {
 		display: grid;
-		gap: 1rem;
+		gap: var(--space-sm);
 		grid-template-columns: 1fr;
 	}
 	label {

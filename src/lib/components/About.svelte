@@ -72,7 +72,7 @@
 		margin-top: 1.25rem;
 	}
 	.about__cta {
-		margin-top: 1.5rem;
+		margin-top: var(--space-md);
 	}
 
 	@media (min-width: 820px) {

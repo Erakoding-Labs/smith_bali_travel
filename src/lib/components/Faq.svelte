@@ -42,7 +42,7 @@
 	}
 	.faq {
 		display: grid;
-		gap: 0.75rem;
+		gap: var(--space-xs);
 	}
 	.faq__item {
 		background: var(--surface);

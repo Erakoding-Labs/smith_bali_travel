@@ -27,13 +27,15 @@
 	.grid {
 		display: grid;
 		grid-template-columns: repeat(auto-fit, minmax(min(100%, 290px), 1fr));
-		gap: 1.25rem;
+		gap: var(--grid-gap);
+		align-items: stretch;
 	}
 	.card {
+		height: 100%;
 		background: var(--surface);
 		border: 1px solid var(--border);
 		border-radius: var(--radius);
-		padding: 1.75rem;
+		padding: var(--card-pad);
 		box-shadow: var(--shadow-sm);
 		transition:
 			transform 0.25s var(--ease),
